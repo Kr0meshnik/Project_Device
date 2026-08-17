@@ -3,10 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="#" rel="stylesheet" type="css">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Device</title>
 </head>
 <body>
-    
+    <header class="main-header">
+        <h1 class="main-logo">Device</h1>
+
+        <nav class="site-nav">
+            <form action="#">
+                <search class="site-search">
+                    <input name="q" type="search" placeholder="Поиск по сайту" alt="Поиск по сайту">
+                </search>
+            </form>
+
+            <ul class="site-list">
+                <li>
+                    <a class="site-link" href="#">Каталог товаров</a>
+
+                    <ul class="catalog-sublist">
+                        <li>
+                            <a class="sublist-link" href="#">Виртуальная реальность</a>
+                        </li>
+
+                        <li>
+                            <a class="sublist-link" href="#">Моноподы для селфи</a>
+                        </li>
+
+                        <li>
+                            <a class="sublist-link" href="#">Экшен-камеры</a>
+                        </li>
+
+                        <li>
+                            <a class="sublist-link" href="#">Фитнес браслеты</a>
+                        </li>
+
+                        <li>
+                            <a class="sublist-link" href="#">Умные часы</a>
+                        </li>
+
+                        <li>
+                            <a class="sublist-link" href="#">Квадрокоптеры</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="site-link" href="#">Доставка</a>
+                </li>
+                <li>
+                    <a class="site-link" href="#">Гарантия</a>
+                </li>
+                <li>
+                    <a class="site-link" href="#">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="user-list">
+                <li class="user-item sign-out">
+                    <a class="user-link" href="#">Вход</a>
+                </li>
+
+                <li class="user-item">
+                    <a class="user-link" href="#">Сравнить</a>
+                </li>
+
+                <li class="user-item">
+                    <a class="user-link" href="#">Корзина</a>
+                </li>
+
+                <li class="user-item sign-in visually-hidden">
+                    <a class="user-link" href="#">Валентин Петухов</a>
+                    <button type="button">Выйти</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="main-slider">
+            <div class="slide">
+                <img src="" class="slide-img" alt="Монопод">
+                <b class="slide-title">Делай селфи, как Бен Стиллер!</b>
+                <p class="slide-info">Самая длинная селфи-палка, доступная в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <button type="button">Подробнее</button>
+                <table class="slide-table">
+                    <tr>
+                        <td>8,5 М</td>
+                        <td>5 КГ</td>
+                        <td>Карбон</td>
+                    </tr>
+
+                    <tr>
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="slide">
+                <img src="" class="slide-img" alt="Фитнес браслет">
+                <b class="slide-title">Худеем правильно!</b>
+                <p class="slide-info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <button type="button">Подробнее</button>
+                <table class="slide-table">
+                    <tr>
+                        <td>48 часов</td>
+                    </tr>
+
+                    <tr>
+                        <td>Без подзарядки</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="slide">
+                <img src="" class="slide-img" alt="Квадрокоптер">
+                <b class="slide-title">Порхает как бабочка, жалит как пчела</b>
+                <p class="slide-info">Это обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
+                <button type="button">Подробнее</button>
+                <table class="slide-table">
+                    <tr>
+                        <td>800 М</td>
+                        <td>50 М</td>
+                    </tr>
+
+                    <tr>
+                        <td>Дальность полёта</td>
+                        <td>Радиус поражения</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="main-popular">
+            <h2 class="popular-title visually-hidden">Популярные категории</h2>
+            <ul class="popular-list">
+                <li class="popular-item">
+                    <a class="item-link" href="#">
+                        <img src="" class="item-img" alt="VR-очки">
+                    </a>
+                    <h3 class="item-title">Виртуальная реальность</h3>
+                </li>
+
+                <li class="popular-item">
+                    <a class="item-link" href="#">
+                        <img src="" class="item-img" alt="Монопод">
+                    </a>
+                    <h3 class="item-title">Моноподы для селфи</h3>
+                </li>
+
+                <li class="popular-item">
+                    <a class="item-link" href="#">
+                        <img src="" class="item-img" alt="Камера">
+                    </a>
+                    <h3 class="item-title">Экшен-камеры</h3>
+                </li>
+
+                <li class="popular-item">
+                    <a class="item-link" href="#">
+                        <img src="" class="item-img" alt="Браслет">
+                    </a>
+                    <h3 class="item-title">Фитнес браслеты</h3>
+                </li>
+
+                <li class="popular-item">
+                    <a class="item-link" href="#">
+                        <img src="" class="item-img" alt="Часы">
+                    </a>
+                    <h3 class="item-title">Умные часы</h3>
+                </li>
+
+                <li class="popular-item">
+                    <a class="item-link" href="#">
+                        <img src="" class="item-img" alt="Коптер">
+                    </a>
+                    <h3 class="item-title">Квадрокоптеры</h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <b class="footer-logo">Device</b>
+
+        <nav class="footer-nav">
+            <ul class="user-list">
+                    <li class="user-item sign-out">
+                        <a class="user-link" href="#">Вход</a>
+                    </li>
+
+                    <li class="user-item">
+                        <a class="user-link" href="#">Сравнить</a>
+                    </li>
+
+                    <li class="user-item">
+                        <a class="user-link" href="#">Корзина</a>
+                    </li>
+
+                    <li class="user-item sign-in visually-hidden">
+                        <a class="user-link" href="#">Валентин Петухов</a>
+                        <button type="button">Выйти</button>
+                    </li>
+            </ul>
+        </nav>
+
+        <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+        <p class="footer-phone">+7 (495) 495-95-95</p>
+
+        <div class="footer-services">
+            <a class="service-link" href="#">Доставка</a>
+            <a class="service-link" href="#">Гарантия</a>
+            <a class="service-link" href="#">Контакты</a>
+        </div>
+
+        <div class="footer-socials">
+            <a class="social-link" href="#">
+                <img src="" alt="facebook">
+            </a>
+
+            <a class="social-link" href="#">
+                <img src="" alt="instagram">
+            </a>
+
+            <a class="social-link" href="#">
+                <img src="" alt="X">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
