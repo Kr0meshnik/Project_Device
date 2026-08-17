@@ -1,1 +1,1 @@
-# Front-Tutorial
+# Learning project of html/css/js basics
