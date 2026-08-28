@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Device</title>
 </head>
@@ -59,7 +63,8 @@
         <div class="header-search">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get" name="search">
                 <label class="visually-hidden" for="search">Поиск</label>
-                <input id="search" class="search-input" name="search" value="" type="search">
+                <div class="search-icon"></div>
+                <input id="search" class="search-input" name="search" value="" type="search" placeholder="Поиск по сайту">
             </form>
         </div>
 
@@ -87,7 +92,62 @@
 
     <main class="container">
         <section class="main-slider">
-            <div class="slide">
+            <ol class="slider_list">
+                <li class="slider-item">
+                    <img src="img/slider1.png" class="slide-img" width="400" height="488" alt="Монопод">
+                    <b class="slide-title">Делай селфи, как Бен Стиллер!</b>
+                    <p class="slide-info">Самая длинная селфи-палка, доступная в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                    <button type="button">Подробнее</button>
+                    <table class="slide-table">
+                        <tr>
+                            <td>8,5 М</td>
+                            <td>5 КГ</td>
+                            <td>Карбон</td>
+                        </tr>
+
+                        <tr>
+                            <td>Длина палки</td>
+                            <td>Вес палки</td>
+                            <td>Материал</td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li class="slider-item">
+                    <img src="img/slider2.png" class="slide-img" width="380" height="510" alt="Фитнес браслет">
+                    <b class="slide-title">Худеем правильно!</b>
+                    <p class="slide-info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                    <button type="button">Подробнее</button>
+                    <table class="slide-table">
+                        <tr>
+                            <td>48 часов</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Без подзарядки</td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li class="slider-item">
+                    <img src="img/slider3.png" class="slide-img" width="554" height="345" alt="Квадрокоптер">
+                    <b class="slide-title">Порхает как бабочка, жалит как пчела</b>
+                    <p class="slide-info">Это обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
+                    <button type="button">Подробнее</button>
+                    <table class="slide-table">
+                        <tr>
+                            <td>800 М</td>
+                            <td>50 М</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Дальность полёта</td>
+                            <td>Радиус поражения</td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+            <!-- <div class="slide">
                 <img src="img/slider1.png" class="slide-img" width="400" height="488" alt="Монопод">
                 <b class="slide-title">Делай селфи, как Бен Стиллер!</b>
                 <p class="slide-info">Самая длинная селфи-палка, доступная в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -139,7 +199,7 @@
                         <td>Радиус поражения</td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
         </section>
 
         <section class="main-popular">
@@ -225,7 +285,7 @@
             <h2 class="companies-title visually-hidden">Логотипы компаний</h2>
             <ul class="companies-list">
                 <li class="companies-item">
-                    <img src="img/logo1.jpg" width="135" height="82" alt="DJI">
+                    <img class="company-logo" src="img/logo1.jpg" width="135" height="82" alt="DJI">
                 </li>
                 <li class="companies-item">
                     <img src="img/logo2.jpg" width="260" height="40" alt="SP Gadgets">
@@ -291,7 +351,7 @@
             </ul>
         </div>
 
-        <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+        <p class="footer-address">г. Москва, ул. Строителей, 15</p>
         <p class="footer-phone">+7 (495) 495-95-95</p>
 
         <div class="footer-services">

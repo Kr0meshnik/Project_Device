@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="main-header">
-        <a class="main-link" href="">
+        <a class="main-link" href="index.html">
             <h1 class="header-title"> 
                 <span class="visually-hidden">Техномаркет</span>
                 Device
@@ -92,10 +92,10 @@
             <h2 class="catalog-title">Моноподы для селфи</h2>
             <ul class="catalog-breadcrumbs">
                 <li class="breadcumb-item">
-                    Главная
+                    <a href="#">Главная</a>
                 </li>
                 <li class="breadcumb-item">
-                    Каталог товаров
+                    <a href="#">Каталог товаров</a>
                 </li>
                 <li class="breadcumb-item">
                     Моноподы для селфи
@@ -156,17 +156,13 @@
                     <legend class="filter-title">bluetooth</legend>
                     <ul class="tech-list">
                         <li>
-                            <label>
-                                <input class="filter-radio" id="tech" name="bluetooth" value="" type="radio">
-                                Есть
-                            </label>
+                            <input class="filter-radio" id="tech-yes" name="bluetooth" value="" type="radio">
+                            <label for="tech-yes">Есть</label>
                         </li>
 
                         <li>
-                            <label>
-                                <input class="filter-radio" id="tech" name="bluetooth" value="" type="radio">
-                                Нет
-                            </label>
+                            <input class="filter-radio" id="tech-no" name="bluetooth" value="" type="radio">
+                            <label for="tech-no">Нет</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -174,16 +170,48 @@
                 <button class="filter-btn" type="submit">Показать</button>
             </form>
 
-            <form class="catalog-sort">
-                <h3 class="sort-title">Сортировка</h3>
-                <!--Форма для сортировки-->
-            </form>
+            <div class="sort-list">
+                <h3 class="sort-title">Сортировка:</h3>
+                <a href="?get&sortType=type&sortOrder=desc" class="sort-type active">По типу</a>
+                <a href="?get&sortType=type&sortOrder=desc" class="sort-type active">По цене</a>
+                <a href="?get&sortType=type&sortOrder=desc" class="sort-type active">По популярности</a>
+
+                <a href="?get&sortType=type&sortOrder=desc" class="sort-order">По возрастанию</a>
+                <a href="?get&sortType=type&sortOrder=desc" class="sort-order active">По убыванию</a>
+            </div>
+
+            <!-- <form action="https://echo.htmlacademy.ru" method="get" name="sort-form">
+                <fieldset>
+                    <legend>
+                        <h3 class="sort-title">Сортировка:</h3>
+                    </legend>
+                    <ul class="sort-list">
+                        <li>
+                            <label for="sort-price" class="active-sort">По цене</label>
+                            <input id="sort-price" class="price-btn" type="radio" name="sortBy" value="">
+                        </li>
+
+                        <li>
+                            <label for="sort-type">По типу</label>
+                            <input id="sort-type" class="type-btn" type="radio" name="sortBy" value="">
+                        </li>
+
+                        <li>
+                            <label for="sort-popular">По популярности</label>
+                            <input id="sort-popular" class="popular-btn" type="radio" name="sortBy" value="">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button class="sort-btn" type="submit" name="sortOrder" value="По возрастанию">По возрастанию</button>
+                <button class="sort-btn active" type="submit" name="sortOrder" value="По убыванию">По убыванию</button>
+            </form> -->
 
             <div class="catalog-item">
                 <img class="catalog-img" src="" alt="Любительская селфи-палка">
                 <div class="item-hover visually-hidden">
-                    <btn class="cart-btn" type="btn">В корзину</btn>
-                    <btn class="compare-btn" type="btn">Добавить к сравнению</btn>
+                    <button class="cart-btn" type="button">В корзину</button>
+                    <button class="compare-btn" type="button">Добавить к сравнению</button>
                 </div>
                 <h3 class="item-title">Любительская селфи-палка</h3>
                 <span class="item-price">500 руб.</span>
@@ -192,8 +220,8 @@
             <div class="catalog-item">
                 <img class="catalog-img" src="" alt="Профессиональная селфи-палка">
                 <div class="item-hover visually-hidden">
-                    <btn class="cart-btn" type="btn">В корзину</btn>
-                    <btn class="compare-btn" type="btn">Добавить к сравнению</btn>
+                    <button class="cart-btn" type="button">В корзину</button>
+                    <button class="compare-btn" type="button">Добавить к сравнению</button>
                 </div>
                 <h3 class="item-title">Профессиональная селфи-палка</h3>
                 <span class="item-price">1 500 руб.</span>
@@ -202,8 +230,8 @@
             <div class="catalog-item">
                 <img class="catalog-img" src="" alt="Непотопляемая селфи-палка">
                 <div class="item-hover visually-hidden">
-                    <btn class="cart-btn" type="btn">В корзину</btn>
-                    <btn class="compare-btn" type="btn">Добавить к сравнению</btn>
+                    <button class="cart-btn" type="button">В корзину</button>
+                    <button class="compare-btn" type="button">Добавить к сравнению</button>
                 </div>
                 <h3 class="item-title">Непотопляемая селфи-палка</h3>
                 <span class="item-price">2 500 руб.</span>
@@ -213,8 +241,8 @@
                 <img class="catalog-img" src="" alt="Селфи-палка следуй за мной">
                 <span class="item-new">NEW</span>
                 <div class="item-hover visually-hidden">
-                    <btn class="cart-btn" type="btn">В корзину</btn>
-                    <btn class="compare-btn" type="btn">Добавить к сравнению</btn>
+                    <button class="cart-btn" type="button">В корзину</button>
+                    <button class="compare-btn" type="button">Добавить к сравнению</button>
                 </div>
                 <h3 class="item-title">Селфи-палка "следуй за мной"</h3>
                 <span class="item-price">4 900 руб.</span>
@@ -222,19 +250,19 @@
 
             <ul class="catalog-pagination">
                 <li class="pagination-item">
-                    <span class="pagination-back">Назад</span>
+                    <button class="pagination-back" type="button">Назад</button>
                 </li>
                 <li class="pagination-item">
-                    <span class="pagination-num active">1</span>
+                    <button class="pagination-num active" type="button">1</button>
                 </li>
                 <li class="pagination-item">
-                    <span class="pagination-num">2</span>
+                    <button class="pagination-num" type="button">2</button>
                 </li>
                 <li class="pagination-item">
-                    <span class="pagination-num">3</span>
+                    <button class="pagination-num" type="button">3</button>
                 </li>
                 <li class="pagination-item">
-                    <span class="pagination-forward">Вперед</span>
+                    <button class="pagination-forward" type="button">Вперед</button>
                 </li>
             </ul>
         </section>
@@ -243,7 +271,7 @@
         <footer class="main-footer">
         <b class="footer-logo">Device</b>
 
-        <nav class="footer-nav">
+        <div class="footer-nav">
             <ul class="user-list">
                     <li class="user-item sign-out">
                         <a class="user-link" href="#">Вход</a>
@@ -262,7 +290,7 @@
                         <button type="button">Выйти</button>
                     </li>
             </ul>
-        </nav>
+        </div>
 
         <address class="footer-address">г. Москва, ул. Строителей, 15</address>
         <p class="footer-phone">+7 (495) 495-95-95</p>

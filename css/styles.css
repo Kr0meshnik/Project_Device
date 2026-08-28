@@ -1,3 +1,79 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: bold;
+    src: url(../fonts/gilroyextrabold.woff2);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 300;
+    src: url(../fonts/gilroylight.woff2);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #464646;
+}
+
+a{
+    text-decoration: none;
+    color: #464646;
+}
+
+.main-header{
+    background-color: #f7e296;
+}
+
+.header-title{
+    font-family: "Gilroy";
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+
+.header-title:hover{
+    opacity: 70%;
+}
+
+.header-title:active{
+    opacity: 50%;
+}
+
+.header-search::before{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.search-input{
+    background-color: #f7e296;
+    border: none;
+    opacity: 65%;
+}
+
+.search-input:hover{
+    opacity: 100%;
+}
+
+.search-input:focus{
+    outline: none;
+    border-bottom: 2px solid #000000;
+    border-width: 100%;
+}
+
+.site-nav a{
+    font-family: 'Gilroy';
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
 .visually-hidden{
     position: absolute;
     width: 1px;
