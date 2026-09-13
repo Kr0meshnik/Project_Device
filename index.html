@@ -12,15 +12,17 @@
 </head>
 <body>
     <header class="main-header">
-        <h1 class="header-title"> 
-            <span class="visually-hidden">Техномаркет</span>
-            Device
-        </h1>
+        <a href="#">
+            <h1 class="main-logo"> 
+                <span class="visually-hidden">Техномаркет</span>
+                Device
+            </h1>
+        </a>
 
         <nav class="site-nav">
             <ul class="site-list">
                 <li>
-                    <a class="site-link" href="catalog.html">Каталог товаров</a>
+                    <a class="nav-link" href="catalog.html">Каталог товаров</a>
 
                     <ul class="catalog-sublist visually-hidden">
                         <li>
@@ -49,13 +51,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="site-link" href="#">Доставка</a>
+                    <a class="nav-link" href="#">Доставка</a>
                 </li>
                 <li>
-                    <a class="site-link" href="#">Гарантия</a>
+                    <a class="nav-link" href="#">Гарантия</a>
                 </li>
                 <li>
-                    <a class="site-link" href="#">Контакты</a>
+                    <a class="nav-link" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -71,7 +73,7 @@
         <div class="user-links">
             <ul class="user-list">
                 <li class="user-item sign-out">
-                    <a class="user-link" href="#">Вход</a>
+                    <a class="user-link" href="#">Войти</a>
                 </li>
 
                 <li class="user-item">
@@ -95,11 +97,11 @@
             <ol class="slider_list">
                 <li class="slider-item">
                     <img src="img/slider1.png" class="slide-img" width="400" height="488" alt="Монопод">
-                    <b class="slide-title">Делай селфи, как Бен Стиллер!</b>
+                    <b class="main-title">Делай селфи, как Бен Стиллер!</b>
                     <p class="slide-info">Самая длинная селфи-палка, доступная в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <button type="button">Подробнее</button>
+                    <button class="info-btn" type="button">Подробнее</button>
                     <table class="slide-table">
-                        <tr>
+                        <tr class="row-title">
                             <td>8,5 М</td>
                             <td>5 КГ</td>
                             <td>Карбон</td>
@@ -115,11 +117,11 @@
 
                 <li class="slider-item">
                     <img src="img/slider2.png" class="slide-img" width="380" height="510" alt="Фитнес браслет">
-                    <b class="slide-title">Худеем правильно!</b>
+                    <b class="main-title">Худеем правильно!</b>
                     <p class="slide-info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <button type="button">Подробнее</button>
+                    <button class="info-btn" type="button">Подробнее</button>
                     <table class="slide-table">
-                        <tr>
+                        <tr class="row-title">
                             <td>48 часов</td>
                         </tr>
                         
@@ -131,11 +133,11 @@
 
                 <li class="slider-item">
                     <img src="img/slider3.png" class="slide-img" width="554" height="345" alt="Квадрокоптер">
-                    <b class="slide-title">Порхает как бабочка, жалит как пчела</b>
+                    <b class="main-title">Порхает как бабочка, жалит как пчела</b>
                     <p class="slide-info">Это обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
-                    <button type="button">Подробнее</button>
+                    <button class="info-btn" type="button">Подробнее</button>
                     <table class="slide-table">
-                        <tr>
+                        <tr class="row-title">
                             <td>800 М</td>
                             <td>50 М</td>
                         </tr>
@@ -200,42 +202,52 @@
                     </tr>
                 </table>
             </div> -->
+
+            <div class="slider-btn">
+                <button class="active" type="button">Текущая</button>
+                <button class="active" type="button">Следующий</button>
+                <button class="active" type="button">Последний</button>
+            </div>
         </section>
 
         <section class="main-popular">
             <h2 class="popular-title visually-hidden">Популярные категории</h2>
             <ul class="popular-list">
                 <li class="popular-item">
-                    <a class="item-link" href="#">
-                        <img src="img/vr.png" class="item-img" width="104" height="57" alt="VR-очки">
-                        <h3 class="item-title">Виртуальная реальность</h3>
-                    </a>
+                    <div class="item-container">
+                        <a class="item-link" href="#">
+                            <div class="img-container">
+                                <img src="img/vr.png" class="popular-img" width="104" height="57" alt="VR-очки">
+                            </div>
+                            <h3 class="item-title">Виртуальная реальность</h3>
+                        </a>
+                    </div>
                 </li>
 
                 <li class="popular-item">
                     <a class="item-link" href="#">
-                        <img src="img/pod.png" class="item-img" width="103" height="130" alt="Монопод">
+                        <img src="img/pod.png" class="popular-img" width="103" height="130" alt="Монопод">
                         <h3 class="item-title">Моноподы для селфи</h3>
                     </a>
                 </li>
 
                 <li class="popular-item">
                     <a class="item-link" href="#">
-                        <img src="img/camera.png" class="item-img" width="78" height="99" alt="Камера">
+                        <img src="img/camera.png" class="popular-img" width="78" height="99" alt="Камера">
                         <h3 class="item-title">Экшен-камеры</h3>
                     </a>
                 </li>
 
                 <li class="popular-item">
                     <a class="item-link" href="#">
-                        <img src="img/bracelet.png" class="item-img" width="119" height="70" alt="Браслет">
+                        <img src="img/bracelet.png" class="popular-img" width="119" height="70" alt="Браслет">
                         <h3 class="item-title">Фитнес браслеты</h3>
                     </a>
                 </li>
 
                 <li class="popular-item">
                     <a class="item-link" href="#">
-                        <img src="img/clock.png" class="item-img" width="62" height="109" alt="Часы">
+                        <img src="img/clock.png" class="popular-img" width="62" height="109" alt="Часы">
                         <h3 class="item-title">Умные часы</h3>
                     </a>
                 </li>
@@ -250,34 +262,25 @@
         </section>
 
         <section class="main-services">
+            <div class="service-nav">
+                <button class="info-btn service-btn" type="button">Доставка</button>
+                <button class="info-btn service-btn" type="button">Гарантия</button>
+                <button class="info-btn service-btn" type="button">Кредит</button>
+            </div>
+            
             <div class="service-card">
-                <h2 class="service-title">Доставка</h2>
-                <p class="service-info">Мы с удоволствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
-                <div class="service-nav">
-                    <button class="service-btn active" type="button">Доставка</button>
-                    <button class="service-btn" type="button">Гарантия</button>
-                    <button class="service-btn" type="button">Кредит</button>
-                </div>
+                <h2 class="main-title">Доставка</h2>
+                <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
             </div>
 
             <div class="service-card">
-                <h2 class="service-title">Гарантия</h2>
-                <p class="service-info">Мы с удоволствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
-                <div class="service-nav">
-                    <button class="service-btn" type="button">Доставка</button>
-                    <button class="service-btn active" type="button">Гарантия</button>
-                    <button class="service-btn" type="button">Кредит</button>
-                </div>
+                <h2 class="main-title">Гарантия</h2>
+                <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
             </div>
 
             <div class="service-card">
-                <h2 class="service-title">Кредит</h2>
-                <p class="service-info">Мы с удоволствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
-                <div class="service-nav">
-                    <button class="service-btn" type="button">Доставка</button>
-                    <button class="service-btn" type="button">Гарантия</button>
-                    <button class="service-btn active" type="button">Кредит</button>
-                </div>
+                <h2 class="main-title">Кредит</h2>
+                <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
             </div>
         </section>
 
@@ -300,40 +303,42 @@
         </section>
 
         <section class="main-about">
-            <h2 class="about-tilte">О нас</h2>
+            <h2 class="main-title">О нас</h2>
             <p class="about-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="about-info">Мы можем доставить Ваш товар в самые отдалённые точки России! DEVICE работает со многими транспортными команиями:</p>
-            <ul class="about-delivery">
-                <li class="delivery-item">
+            <ul class="delivery-list">
+                <li>
                     Деловые линии
                 </li>
-                <li class="delivery-item">
+                <li>
                     Автотрейдинг
                 </li>
-                <li class="delivery-item">
+                <li>
                     ЖелДорЭкспедиция
                 </li>
             </ul>
-            <button class="about-btn" type="button">Подробнее</button>
+            <button class="info-btn" type="button">Подробнее</button>
         </section>
 
         <section class="main-contacts">
-            <h2 class="contacts-tilte">Контакты</h2>
+            <h2 class="main-title">Контакты</h2>
             <p class="contacts-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="contacts-map">
                 <img class="contacts-img" src="img/preview-map.jpg" width="560" height="225" alt="Мы находимся по адресу г.Москва, ул.Строителей, 15">
             </p>
-            <button class="contacts-btn" type="submit">Напишите нам</button>
+            <button class="info-btn" type="button">Напишите нам</button>
         </section>
     </main>
 
     <footer class="main-footer">
-        <b class="footer-logo">Device</b>
+        <a href="#">
+            <b class="main-logo footer-logo">Device</b>
+        </a>
 
         <div class="footer-user">
-            <ul class="user-list">
+            <ul class="user-list user-footer">
                     <li class="user-item sign-out">
-                        <a class="user-link" href="#">Вход</a>
+                        <a class="user-link" href="#">Войти</a>
                     </li>
 
                     <li class="user-item">
@@ -379,20 +384,20 @@
             <h2 class="write-us-title visually-hidden">Напишите нам</h2>
             <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post" name="write-us" >
                 <p class="write-us-item">
-                    <label for="write-us-name">Ваше имя:</label>
-                    <input class="write-us-name" id="write-us-name" name="name" value="" type="text" placeholder="Имя Фамилия">
+                    <label class="modal-label" for="write-us-name">Ваше имя:</label>
+                    <input class="modal-input" id="write-us-name" name="name" value="" type="text" placeholder="Имя Фамилия">
                 </p>
 
                 <p>
-                    <label class="write-us-email" for="write-us-email">Ваш e-mail</label>
-                    <input class="write-us-email" id="write-us-email" name="email" value="" type="email" placeholder="example@email.com">
+                    <label class="modal-label" for="write-us-email">Ваш e-mail:</label>
+                    <input class="modal-input" id="write-us-email" name="email" value="" type="email" placeholder="example@email.com">
                 </p>
 
                 <p>
-                    <label class="write-us-message" for="write-us-message">Текст письма:</label>
-                    <textarea class="write-us-message" id="write-us-message" name="message" value="" placeholder="В свободной форме"></textarea>
+                    <label class="modal-label" for="write-us-message">Текст письма:</label>
+                    <textarea class="modal-input modal-area" id="write-us-message" name="message" value="" placeholder="В свободной форме"></textarea>
                 </p>
-                <button class="write-us-submit" type="submit">Отправить</button>
+                <button class="info-btn" type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
     </section>
